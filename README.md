@@ -96,3 +96,19 @@ JSON:
   The final operation is done through operation. Previous outputs are entered in this section and the desired operation is performed.
   
       Task DoWork(Guid id, IDictionary<string, object> input);
+
+## Tools
+* IDb:
+
+  The events database is LiteDb. To use inject **IDb** and call the following method to access the database
+    ```
+    var col = _db.GetCollection<FeedItemEntity>(id, "Test");
+    ```
+
+* ITaskRunner:
+
+  Inject **ITaskRunner** to run a Task in the background
+    ```
+    void Add(Action action);
+    ```
+    
