@@ -24,7 +24,7 @@ JSON:
 
       "Event": {
         "CollectionId": "6a7bf411-3b75-4c32-9350-4b860a0df611",
-        "Id": "11122222333344445555 (openweathermap.org API key)",
+        "Id": "6721b5e4-31f3-41c2-acde-56b3c2b2c203",
         "Input": {
           "OnTime": "08:00",
           "TimeZone": "Iran Standard Time" 
@@ -35,7 +35,7 @@ JSON:
         {
           "Id": "7e4dc2c5-ac80-44b4-ac1c-7ddfe0349f57",
           "Input": {
-            "APIKey": "b86f1829d630e761f3de15d56973a10f",
+            "APIKey": "11122222333344445555 (openweathermap.org API key)",
             "City": "Tehran,ir",
             "TimeZone": "Iran Standard Time"
           }
