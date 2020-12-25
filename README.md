@@ -3,7 +3,7 @@ You can use this package to create plugins for nCroner. Project type must be .Ne
 
 # Installing via NuGet
   
-    Install-Package F4ST.Common
+    Install-Package nCroner.Common
 
 ## Getting Started
 Everything starts with an event. When an event occurs and is executed, a series of output values are returned. These values can be the input of one middleware and the output of the middleware of another input until finally the input of an operation and this event ends.
