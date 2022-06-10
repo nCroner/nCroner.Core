@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using nCroner.Common.Models;
+using nCroner.Core.Models;
 
-namespace nCroner.Common.Triggers
+namespace nCroner.Core.Triggers
 {
     public abstract class Trigger : ITrigger
     {
         #region Abstract Methods
         
         public abstract void Dispose();
+
+        public abstract void EventInit(Guid id, Dictionary<string, object> input);
 
         public abstract Task<EventResponse> DoWork(Guid id, IDictionary<string, object> input);
         

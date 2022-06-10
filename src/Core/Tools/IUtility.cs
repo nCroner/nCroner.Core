@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace nCroner.Common.Tools
+namespace nCroner.Core.Tools
 {
     public interface IUtility
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using nCroner.Common.Models;
+using nCroner.Core.Models;
 
-namespace nCroner.Common.Actions
+namespace nCroner.Core.Actions
 {
     public interface IAction : IDisposable
     {

@@ -1,7 +1,7 @@
 ﻿using LiteDB;
 using System;
 
-namespace nCroner.Common.Tools
+namespace nCroner.Core.Tools
 {
     public interface IDb : IDisposable
     {

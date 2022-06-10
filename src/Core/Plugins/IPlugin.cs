@@ -1,23 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using FluentScheduler;
 using Microsoft.Extensions.DependencyInjection;
-using nCroner.Common.Actions;
-using nCroner.Common.Models;
-using nCroner.Common.Triggers;
+using nCroner.Core.Actions;
+using nCroner.Core.Models;
+using nCroner.Core.Triggers;
 
-namespace nCroner.Common.Plugins
+namespace nCroner.Core.Plugins
 {
     public interface IPlugin
     {
         string Title { get; }
         string Description { get; }
-        
+
         /// <summary>
         /// Gets the interval in second
         /// </summary>
         int Interval { get; }
-        
+
         IReadOnlyCollection<TriggerTypeDataModel> Triggers { get; }
         IReadOnlyCollection<TypeDataModel> Actions { get; }
 
@@ -25,9 +26,7 @@ namespace nCroner.Common.Plugins
 
         void Init(IServiceCollection services);
 
-        void AddEvent<T>(Guid id, string title, string eventRoute = "") where T : ITrigger;
+        void AddEvent<T>(Guid id, string title, Schedule schedule = null, string eventRoute = "") where T : ITrigger;
         void AddMiddleware<T>(Guid id, string title) where T : IAction;
     }
-
-    
 }

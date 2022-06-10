@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using FluentScheduler;
 using Microsoft.Extensions.DependencyInjection;
-using nCroner.Common.Actions;
-using nCroner.Common.Models;
-using nCroner.Common.Triggers;
+using nCroner.Core.Actions;
+using nCroner.Core.Models;
+using nCroner.Core.Triggers;
 
-namespace nCroner.Common.Plugins
+namespace nCroner.Core.Plugins
 {
     public abstract class Plugin : IPlugin
     {
@@ -29,14 +30,16 @@ namespace nCroner.Common.Plugins
 
         public abstract void Init(IServiceCollection services);
 
-        public void AddEvent<T>(Guid id, string title, string eventRoute = "") where T : ITrigger
+        public void AddEvent<T>(Guid id, string title, Schedule schedule = null, string eventRoute = "")
+            where T : ITrigger
         {
             _events.Add(new TriggerTypeDataModel()
             {
                 Id = id,
                 Title = title,
                 Type = typeof(T),
-                TriggerRoute = eventRoute.ToLower()
+                TriggerRoute = eventRoute.ToLower(),
+                Schedule = schedule
             });
         }
 

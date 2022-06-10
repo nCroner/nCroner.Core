@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace nCroner.Common.Models
+namespace nCroner.Core.Models
 {
     public class EventResponse
     {

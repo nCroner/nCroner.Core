@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace nCroner.Common.Attributes
+namespace nCroner.Core.Attributes
 {
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
     public class OutputAttribute : Attribute

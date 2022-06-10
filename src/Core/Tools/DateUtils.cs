@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace nCroner.Common.Tools
+namespace nCroner.Core.Tools
 {
     public static class DateUtils
     {

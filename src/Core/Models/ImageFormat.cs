@@ -1,4 +1,4 @@
-﻿namespace nCroner.Common.Models
+﻿namespace nCroner.Core.Models
 {
     public enum ImageFormat
     {

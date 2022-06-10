@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace nCroner.Common.Tools
+namespace nCroner.Core.Tools
 {
     public static class StringExt
     {
