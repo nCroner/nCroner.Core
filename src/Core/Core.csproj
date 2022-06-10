@@ -9,13 +9,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <AssemblyName>nCroner.Common</AssemblyName>
-    <RootNamespace>nCroner.Common</RootNamespace>
+    <AssemblyName>nCroner.Core</AssemblyName>
+    <RootNamespace>nCroner.Core</RootNamespace>
     <Version>1.0.1</Version>
     <Product>nCroner</Product>
     <Company>nCroner</Company>
     <Authors>Naser Rafinia</Authors>
-    <RepositoryUrl>https://github.com/nCroner/CommonPackage</RepositoryUrl>
+    <RepositoryUrl>https://github.com/nCroner/nCroner.Core</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
   </PropertyGroup>
